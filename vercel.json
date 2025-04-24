@@ -1,4 +1,9 @@
 {
+    "build": {
+      "src": "dist/webchat-cloud",
+      "use": "@vercel/static-build",
+      "buildCommand": "npm run build"
+    },
     "rewrites": [
       { "source": "/(.*)", "destination": "/index.html" }
     ],
