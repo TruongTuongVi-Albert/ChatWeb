@@ -1,14 +1,18 @@
 {
-    "build": {
-      "src": "dist/webchat-cloud",
-      "use": "@vercel/static-build",
-      "buildCommand": "npm run build"
-    },
+    "builds": [
+      {
+        "src": "angular.json", 
+        "use": "@vercel/static-build",
+        "config": { "distDir": "dist/webchat-cloud" }
+      }
+    ],
     "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" }
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
     ],
     "cleanUrls": true,
-    "trailingSlash": false,
-    "outputDirectory": "dist/webchat-cloud"
+    "trailingSlash": false
   }
   
