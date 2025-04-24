@@ -1,9 +1,11 @@
 {
     "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" }
+        {
+            "source": "/",
+            "destination": "/home.html"
+        }
     ],
     "cleanUrls": true,
     "trailingSlash": false,
     "outputDirectory": "dist/webchat-cloud"
-  }
-  
+}
